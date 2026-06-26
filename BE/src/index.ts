@@ -26,8 +26,11 @@ app.use(express.json()) //dung de parse json tu client gui len
 
 app.use(express.urlencoded({ extended: true })); // Để đọc dữ liệu từ Form HTML (Sử dụng trường này nếu dùng Form)
 app.use('/quizzes', quizzesRouter)
+app.use('/api/quizzes', quizzesRouter)
 app.use('/questions', questionsRouter)
+app.use('/api/questions', questionsRouter)
 app.use('/users', usersRouter)
+app.use('/api/users', usersRouter)
 
 if (!process.env.VERCEL) {
   app.listen(port, () => {
