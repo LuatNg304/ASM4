@@ -29,9 +29,11 @@ app.use('/quizzes', quizzesRouter)
 app.use('/questions', questionsRouter)
 app.use('/users', usersRouter)
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+if (!process.env.VERCEL) {
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
+}
 
 export default app
 
