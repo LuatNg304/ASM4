@@ -1,0 +1,10 @@
+/* Reset Vite template constraints so standard Bootstrap 5 container grid works properly */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
+  border-inline: none !important;
+  min-height: auto !important;
+  display: block !important;
+}

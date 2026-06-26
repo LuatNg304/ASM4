@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2023",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+
+    "ignoreDeprecations": "6.0"
+  },
+
+  "files": ["src/type.d.ts"],
+  "include": ["src/**/*"]
+}
